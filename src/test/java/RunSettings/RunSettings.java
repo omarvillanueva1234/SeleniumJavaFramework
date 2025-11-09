@@ -29,9 +29,9 @@ public class RunSettings {
     }
 
     /**
-     * Builds a RunSettings instance from system properties.
-     * Example:
-     *   -Denv=dummy -Dargs=username=testuser,password=123
+     * @Author : Yul Omar Villanueva
+     * @Description : Builds RunSettings from system properties.
+     * @return : RunSettings instance configured for the specified environment.
      */
     public static RunSettings fromSystemProperties() {
 
@@ -67,8 +67,10 @@ public class RunSettings {
     }
 
     /**
-     * Parses a comma-separated key=value string into a Map.
-     * Example: "username=john,password=123,domain=abc"
+     * @Author : Yul Omar Villanueva
+     * @Description : Parses a comma-separated key=value string into a map.
+     * @param args : The raw argument string.
+     * @return : Map of parsed key-value pairs.
      */
     private static Map<String, String> parseArgs(String args) {
         Map<String, String> map = new HashMap<>();
